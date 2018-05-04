@@ -24,3 +24,5 @@ function bilanganPrima(limit) {
     }
     return prime;
 }
+
+bilanganPrima(100)
