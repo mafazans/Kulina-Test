@@ -9,10 +9,13 @@
 // 70
 // 9
 
-function inputAngka(num){
-	num.toString().split('').map(function(number, index, arr) {
+function inputAngka(input){
+	const regex = /\d/g;
+	const angka = input.match(regex).join('');
+	console.log(angka)
+	angka.toString().split('').map(function(number, index, arr) {
     console.log(number * Math.pow(10, arr.length - index - 1));
 	});
 }
 
-inputAngka(12123134);
+inputAngka("1.345.679");
