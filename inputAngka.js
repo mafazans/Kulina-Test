@@ -11,8 +11,7 @@
 
 function inputAngka(input){
 	const regex = /\d/g;
-	const angka = input.match(regex).join('');
-	console.log(angka)
+	const angka = JSON.stringify(input).match(regex).join('');
 	angka.toString().split('').map(function(number, index, arr) {
     console.log(number * Math.pow(10, arr.length - index - 1));
 	});
